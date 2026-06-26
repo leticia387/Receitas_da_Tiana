@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Receitas da Tiana</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <img src="imagens/ray.png.png" id="ray" alt="Ray, o vaga-lume">
+
+  <section id="inicio" class="hero">
+    <div class="hero-text">
+      <h1>👑 Restaurante da Tiana</h1>
+    </div>
+  </section>
+
+  <main>
+
+    <section class="introducao">
+      <h2>Bem-vindo ao restaurante da Tiana!</h2>
+      <p>Receitas deliciosas inspiradas em New Orleans e no filme.</p>
+    </section>
+
+    <section class="receitas">
+
+      <div class="card">
+        <img src="imagens/beignets.jpg.jpg" alt="Beignets da Tiana">
+
+        <h2>Beignets da Tiana</h2>
+
+        <p>Os famosos bolinhos açucarados feitos pela Tiana.</p>
+
+        <h3>Ingredientes:</h3>
+
+        <ul>
+          <li>2 xícaras de farinha</li>
+          <li>1 ovo</li>
+          <li>1/2 xícara de leite</li>
+          <li>Açúcar de confeiteiro</li>
+        </ul>
+
+        <h3>Modo de preparo:</h3>
+
+        <p>Misture tudo, frite em óleo quente e finalize com açúcar.</p>
+
+        <div class="avaliacao">
+          <span onclick="avaliar(1)">⭐</span>
+          <span onclick="avaliar(2)">⭐</span>
+          <span onclick="avaliar(3)">⭐</span>
+          <span onclick="avaliar(4)">⭐</span>
+          <span onclick="avaliar(5)">⭐</span>
+        </div>
+
+        <button onclick="mostrarMensagem('Beignets da Tiana')">
+          Gostei dessa receita!
+        </button>
+      </div>
+
+      <div class="card">
+        <img src="imagens/gumbo.gif" alt="GIF de Gumbo">
+
+        <h2>Gumbo de New Orleans</h2>
+
+        <p>Um prato tradicional cheio de sabor.</p>
+
+        <h3>Ingredientes:</h3>
+
+        <ul>
+          <li>Frango</li>
+          <li>Linguiça</li>
+          <li>Temperos</li>
+          <li>Arroz</li>
+        </ul>
+
+        <h3>Modo de preparo:</h3>
+
+        <p>Cozinhe os ingredientes lentamente até formar um caldo saboroso.</p>
+
+        <div class="avaliacao">
+          <span onclick="avaliar(1)">⭐</span>
+          <span onclick="avaliar(2)">⭐</span>
+          <span onclick="avaliar(3)">⭐</span>
+          <span onclick="avaliar(4)">⭐</span>
+          <span onclick="avaliar(5)">⭐</span>
+        </div>
+
+        <button onclick="mostrarMensagem('Gumbo de New Orleans')">
+          Gostei dessa receita!
+        </button>
+      </div>
+
+      <div class="card">
+        <img src="imagens/jambalaya.jpg" alt="Jambalaya">
+      
+        <h2>Jambalaya</h2>
+      
+        <p>Um prato típico de New Orleans inspirado no filme.</p>
+      
+        <h3>Ingredientes:</h3>
+      
+        <ul>
+          <li>Arroz</li>
+          <li>Frango</li>
+          <li>Linguiça</li>
+          <li>Pimentão</li>
+          <li>Temperos</li>
+        </ul>
+      
+        <h3>Modo de preparo:</h3>
+      
+        <p>Cozinhe os ingredientes juntos até o arroz ficar bem temperado e saboroso.</p>
+      
+        <div class="avaliacao">
+          <span onclick="avaliar(1)">⭐</span>
+          <span onclick="avaliar(2)">⭐</span>
+          <span onclick="avaliar(3)">⭐</span>
+          <span onclick="avaliar(4)">⭐</span>
+          <span onclick="avaliar(5)">⭐</span>
+        </div>
+
+        <button onclick="mostrarMensagem('Jambalaya')">
+          Gostei dessa receita!
+        </button>
+      </div>
+
+    </section>
+
+    
+    <section class="video">
+      <h2>Vídeo do Filme</h2>
+
+      <video controls>
+        <source src="imagens/videoreceitas.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos.
+      </video>
+    </section>
+
+    <section class="interacao">
+
+      <h2>Interação com JavaScript</h2>
+
+      <p>Clique no botão abaixo para mudar a cor do fundo.</p>
+
+      <button id="btnMagia">
+        ✨ Magia da Tiana
+      </button>
+
+    </section>
+
+  </main>
+
+  <section class="chef">
+
+    <h2>👩🏾‍🍳 Chef do Dia</h2>
+  
+    <p id="curiosidade">
+      Clique para descobrir uma curiosidade!
+    </p>
+  
+    <button onclick="chefDia()">
+      Mostrar Curiosidade
+    </button>
+  
+  </section>
+  
+  <section class="reserva">
+  
+    <h2>📅 Reserve sua Mesa</h2>
+  
+    <input
+    type="text"
+    id="nome"
+    placeholder="Seu nome">
+  
+    <input
+    type="date"
+    id="data">
+  
+    <button onclick="reservar()">
+      Reservar
+    </button>
+  
+    <p id="mensagemReserva"></p>
+  
+  </section>
+
+  <footer>
+    <p>Site inspirado em A Princesa e o Sapo 💚</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+
+<div id="abertura">
+  <h1>✨ Restaurante da Tiana ✨</h1>
+  <p>Onde os sonhos ganham sabor...</p>
+</div>
+
+<div id="barra-container">
+  <div id="barra"></div>
+</div>
+
+<img src="imagens/ray.png.png" id="ray" alt="Ray, o vaga-lume">
+
+</html>
